@@ -21,5 +21,5 @@ def upload(request):
 	else:
 		form = UploadFileForm()
 	images = [str(f.file).split('/')[-1] for f in UploadFile.objects.all()]
-	return render(request, 'main/upload.html', {'form':form, 'images':images})
+	return render(request, 'upload.html', {'form':form, 'images':images})
 	

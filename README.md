@@ -97,15 +97,15 @@ def upload(request):
 	else:
 		form = UploadFileForm()
 	images = [str(f.file).split('/')[-1] for f in UploadFile.objects.all()]
-	return render(request, '<your_app_name>/upload.html', {'form':form, 'images':images})
+	return render(request, 'upload.html', {'form':form, 'images':images})
 ```
 
 
 ### 6. Create your templates (HTML) ###
 ------
 
-1. Create a folder <your_app_name>/templates/<your_app_name>/
-2. Create an HTML file <your_app_name>/templates/<your_app_name>/upload.html
+1. Create a folder <your_app_name>/templates/
+2. Create an HTML file <your_app_name>/templates/upload.html
 3. Edit your HTML to add the following
 ```html
 <!DOCTYPE html>
