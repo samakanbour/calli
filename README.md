@@ -106,7 +106,7 @@ def upload(request):
 
 1. Create a folder <your_app_name>/templates/
 2. Create an HTML file <your_app_name>/templates/upload.html
-3. Edit your HTML to add the following
+3. Edit upload.html to add the following
 ```html
 <!DOCTYPE html>
 {% load staticfiles %}
